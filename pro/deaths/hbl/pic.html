@@ -1,0 +1,60 @@
+<doctype html>
+<html>
+<head>
+	<div style="background-image: url('mot.jpg'); width: 100%; height: 100%;">
+
+
+
+		    <link rel="stylesheet" type="text/css" href="bu.css">
+<link rel="stylesheet" type="text/css" href="bu.css">
+
+<video id="my" autoplay="autoplay">
+	<source src="cam.mp3" type="audio/mpeg">
+</video>
+
+
+</head>
+<body>
+
+
+<video id="video" width="200" height="200" autoplay></video>
+<button id="snap"     class="a" class="wrapper" class="icon"   class="path" class="svg" class="link_wrapper"  class="b" class="icon svg" class="path"
+onclick="s()">Snap Photo</button>
+<canvas id="canvas" width="600" height="400"></canvas>
+
+
+<script type="text/javascript">
+
+var video = document.getElementById('video');
+
+// Get access to the camera!
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    // Not adding `{ audio: true }` since we only want video now
+    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+        //video.src = window.URL.createObjectURL(stream);
+        video.srcObject = stream;
+        video.play();
+    });
+}
+
+
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+var video = document.getElementById('video');
+
+// Trigger photo take
+document.getElementById("snap").addEventListener("click", function() {
+  context.drawImage(video, 0, 0, 640, 480);
+});
+
+
+
+	function s(){
+		document.getElementById("my").load();
+	}
+
+
+</script>
+</div>
+</body>
+</html>

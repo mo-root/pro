@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body >
+<video id="my" autoplay="autoplay">
+  <source src="wave.mp3" type="audio/mpeg">
+</video>
+
+  <link rel="stylesheet" type="text/css" href="selection-brown.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+ function fightDeath() {
+      console.log("playing asdadasda scene - fight");
+
+      $("#main").fadeOut().load('after_escaping.html').hide().fadeIn()
+      location.replace('after_escaping.html');
+   }
+function Bounty(){
+	let x = Math.random() * 101;
+	if(x>30){
+		fightDeath();
+	}
+	else{
+	      $("#main").fadeOut().load('jedi.html').hide().fadeIn()
+      location.replace('deaths/fight.html');
+   }	
+	}
+function Joon(){
+  let x = Math.random() * 101;
+  if(x>30){
+    loctaion.replace("jedi.html")
+  }
+  else{
+        $("#main").fadeOut().load('jedi.html').hide().fadeIn()
+      location.replace('deaths/fight.html');
+   }  
+  }
+  
+
+  function wave(){
+    document.getElementById('my').load();
+  }
+  
+</script>
+    <button onmouseover="wave()" id="choice_l" class="choice" type="button" onclick="Bounty()"> Bounty hunter</button>
+    <button onmouseover="wave()" id="choice_r" class="choice" type="button" onclick="Joon()"> Join the rebellion
+</button>
+
+
+
+
+
+  </body>
+</html>

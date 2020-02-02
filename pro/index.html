@@ -1,0 +1,60 @@
+<DOCTYPE html>
+<html lang="en" dir="ltr">
+
+ <h6>ur trooper's name:<input type="text" name="asdas" class="a" class="wrapper" class="icon"   class="path" class="svg" class="link_wrapper"  class="b" class="icon svg" class="path">
+</h6>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="log.css">
+    <link rel="stylesheet" type="text/css" href="button.css">
+    <meta charset="utf-8">
+    <title></title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="sketch.js" charset="utf-8"></script>
+ 
+</audio> 
+</head>
+
+<body>
+<br>
+
+<br>
+<br>
+<div id="main">
+    <video id="Video" poster=1.png>
+        <source src="clip.mp4" type="video/mp4">
+    </video>
+
+    <button type="button" name="start" onclick="start()" id="start" onclick="setTimeout(re, 102000);" onclick="re()">start</button>
+
+
+    <button type="button" name="skip" id="skip" onclick="re()"
+      class="a" class="wrapper" class="icon"   class="path" class="svg" class="link_wrapper"  class="b" class="icon svg" 
+class="path"  
+    >skip</button>
+    <script type='text/javascript'>
+        document.getElementById('Video').addEventListener('ended', myHandler, false);
+
+        function myHandler(e) {
+            console.log("done");
+            let audio_e = document.getElementById("music");
+            audio_e.volume = 0.6;
+            audio_e.play();
+            $("#main").fadeOut().load('fight-or-flee.html').hide().fadeIn(); //fade out screen
+
+       
+        }
+
+        function re(){
+        	location.replace('fight-or-flee.html');
+        }
+
+    </script>
+</div>
+
+
+
+
+
+</body>
+</html>

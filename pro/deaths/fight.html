@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" type="text/css" href="hi.css">
+
+</head>s
+<body style="background-color:black;">
+<video autoplay id="Video" muted="muted">
+    <source src="fight.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+<script type='text/javascript'>
+
+
+function openFullscreen() {
+
+  console.log("v4");
+  console.log("requesting full screen");
+
+  const elem = document.documentElement;
+
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+
+
+ function start() {
+    console.log("start");
+    openFullscreen();
+    
+
+}
+
+function restart(){
+  location.replace("/home/student/Desktop/meet stuff/meet folder/HTML/project/pro/index.html");
+}
+
+</script>
+
+<button class="a" class="wrapper" class="icon"   class="path" class="svg" class="link_wrapper"  class="b" class="icon svg" class="path"
+ onclick="restart()">
+  Restart! :)
+</button>
+
+</body>
+</html>

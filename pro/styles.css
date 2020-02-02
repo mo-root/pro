@@ -1,0 +1,57 @@
+
+body{
+  background-color: #000000
+}
+#start {
+  font-family: StarJediHollow, serif;
+
+  width: 290px ;
+  height: 140px;
+
+  background-color: #00000000 ;
+  border-color: #80191B;
+  color: #FEFBEC;
+  font-size: 65px;
+
+  border-radius: 52px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  opacity: 100;
+}
+
+#start:hover {
+   box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+}
+
+#Video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+
+}
+
+
+@font-face {
+  font-family: "StarJediHollow";
+  src: url("fonts/StarJediHollow.woff");
+}
+
+#skip{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-size: 16px;
+}
+
+h6{
+color: white;
+}

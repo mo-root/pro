@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<video id="my" autoplay="autoplay">
+	<source src="wave.mp3" type="audio/mpeg">
+</video>
+
+</head>
+  <body>
+<video id="my" autoplay="autoplay">
+	<source src="wave.mp3" type="audio/mpeg">
+</video>
+
+
+  <link rel="stylesheet" type="text/css" href="selection-black.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+ function fightDeath() {
+      console.log("playing asdadasda scene - fight");
+
+      $("#main").fadeOut().load('jedi.html').hide().fadeIn()
+      location.replace('jedi.html');
+   }
+function pr(){
+	let x = Math.random() * 101;
+	if(x>30){
+		fightDeath();
+	}
+	else{
+	      $("#main").fadeOut().load('jedi.html').hide().fadeIn()
+      locations.replace('deaths/fight.html');
+   }	
+	}
+
+  function wave(){
+  	document.getElementById('my').load();
+  }
+</script>
+    <button onmouseover="wave()" id="choice_l" class="choice" type="button" onclick="pr()">Han Solo</button>
+    <button onmouseover="wave()" id="choice_r" class="choice" type="button" onclick="pr()"> lando clarissian
+</button>
+
+
+
+
+
+  </body>
+</html>

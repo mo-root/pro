@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <body >
+<video id="my" autoplay="autoplay">
+  <source src="wave.mp3" type="audio/mpeg">
+</video>
+
+  <link rel="stylesheet" type="text/css" href="selection-blue.css">
+<script>
+  
+function jj(){
+
+
+      
+      location.replace("defeat.html")
+
+}
+
+function ee(){
+
+
+   
+      location.replace("die.html")
+
+}
+
+function wave(){
+    document.getElementById('my').load();
+  }
+
+
+  function jedi() {
+let x = Math.floor(Math.random() * 101);
+if(x>40){
+  jj();
+}
+
+else{
+  ee();
+}
+
+}
+</script>
+    <button onmouseover="wave()" id="choice_l" class="choice" type="button" onclick="jedi()"> BECOME <br />A PILOT</button>
+    <button onmouseover="wave()" id="choice_r" class="choice" type="button" onclick="jedi()"> BECOME <br />A JEDI</button>
+
+  </body>
+</html>
